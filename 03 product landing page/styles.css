@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    background-color: #eee;
+}
+
+ul{
+  list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 300px;
+    height: 100%;
+    padding: .7rem 0;
+}
+
+#container{
+    max-width: 960px;
+    margin: 1rem auto 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar{
+    background-color: #eee;
+    padding: .5rem;
+    color: #333;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* NavBar */
+#nav-bar1{
+    width: 50%;
+}
+#nav-bar1 ul{
+    padding: .4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+
+}
+#nav-bar1 ul li{
+    width: 33%;
+    margin: .2rem 0;
+}
+@media(max-width: 652px){
+    .logo{
+        width: 90%;
+        padding: .4rem 0;
+    }
+    #header{
+        align-items: center;
+    }
+    #nav-bar1{
+        width: 1080px;
+    }
+    #nav-bar1 ul li{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width: 600px){
+    .logo{
+        width: 300px;
+    }
+    #header{
+        flex-direction: column;
+    }
+    #nav-bar1{
+        width: 100%;
+    }
+}
+
+.email-box{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.email-box h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.email-box input{
+    display: block;
+    margin: auto;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+#email{
+    padding: .27rem;
+    width: 300px;
+}
+
+#submit{
+    display: inline-block;
+    background-color: #F1C40F;
+    color: black;
+    border: 0ch;
+    font-weight: bolder;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+.feature{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin: 1.2rem;
+    color: #ef981f;
+}
+
+.description{
+    margin: 1.2rem;
+}
+
+#how-it-works{
+    margin: 1.5rem auto;
+    align-items: center;
+}
+
+#prices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.75rem;
+}
+#price-list{
+    border:black 1px solid;
+    border-radius: 2px;
+    width: 15rem;
+    height: 16rem;
+    margin: 1rem;
+}
+@media (max-width: 833px){
+    #price-list{
+        margin: 1rem 6rem;
+    }
+}
+#price-list h4{
+    background-color: rgb(200, 200, 200);
+    padding: .4rem 0;
+}
+#price-list p{
+    margin-top: .4rem;
+    padding: .4rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+}
+#price-list ol{
+    padding-bottom: .4rem;
+}
+#price-list ol li{
+    padding: .4rem;
+}
+#price-list button{
+    margin-top: .4rem;
+    padding:.4rem;
+    background-color:#F1C40F;
+    font-size:medium;
+    border: 0;
+}
+
+footer{
+    padding: 1.5rem;
+    margin-top: 1.75rem;
+    background-color: rgb(223, 223, 223);
+    text-align: right;
+}
+footer ul{
+    display:flex;
+    justify-content: flex-end;
+}
+footer ul li{
+    padding: 0 .4rem .4rem .4rem;
+}
+span{
+    color: rgb(145, 145, 145);
+}
