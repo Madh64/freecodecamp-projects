@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-red: rgb(180, 26, 26);
+    --red-hover: rgb(110, 25, 25);
+    --primary-blue: rgb(64, 72, 118);
+    --primary-grey:rgb(37, 37, 37);
+    --light-grey:rgb(80, 80, 80);
+}
+body{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+    padding: 1rem 1.7rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+#nav-bar{
+    background-color: var(--primary-red);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar ul li:hover{
+    background-color: var(--red-hover);
+}
+#navbar ul li a{
+    color: white;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 98vh;
+    font-size: 30px;
+    line-height: 1.5;
+    background-color: var(--primary-grey);
+}
+#welcome-section h1{
+    font-size: 50px;
+    color: var(--primary-red);
+}
+#projects{
+    background-color: var(--primary-blue);
+    padding: 4rem 0;
+    text-align: center;
+}
+#projects header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    padding: .7rem 0;
+    margin: 2rem 0;
+}
+#projects header h2{
+    border-bottom: 3px solid white;
+    font-weight: lighter;
+}
+#project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+}
+.project-title{
+    background-color: var(--primary-grey);
+    margin: 1rem;
+    width: 30%;
+    padding: 1rem 0 0 0;
+}
+
+.project-title a img{
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.project-title a p{
+    padding: .7rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1090px){
+    .project-title{
+        width: 42%;
+    }
+}
+@media (max-width:730px){
+    .project-title{
+        width: 98%;
+    }
+}
+.logo{
+    width: 30px;
+    height: auto;
+}
+#contact{
+    background-color: var(--light-grey);
+    padding: 1rem 0;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+#contact a{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 0 0;
+    font-size: 20px;
+    color: black;
+}
+footer{
+    background-color: var(--light-grey);
+    text-align: end;
+    padding: .4rem 0;
+}
+footer p{
+    padding-bottom: .7rem;
+}
+.link-fcc p{
+    display: grid;
+    justify-content: end;
+}
+.link-fcc a{
+    padding: 0 0 0 .35rem;
+    color: black;
+}
+.link-fcc img{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
